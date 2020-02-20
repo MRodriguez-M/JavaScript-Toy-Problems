@@ -9,3 +9,6 @@ F = C x 1.8 + 32
 // Create variables for celsius and fahrenheit conversion
 var celsius = 12;
 var fahrenheit = celsius * 1.8 + 32;
+
+// Output converted fahrenheit value
+console.log(fahrenheit);
