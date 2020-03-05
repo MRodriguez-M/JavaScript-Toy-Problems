@@ -14,6 +14,10 @@ while (number <= 100) {
     if (number % 3 === 0) {
         console.log("Fizz");
     }
+    // Else if statement to check if number is divisible by 5
+    else if (number % 5 === 0) {
+        console.log("Buzz");
+    }
     // Print out number if it does not meet any of the prior requirements
     else {
         console.log(number);
