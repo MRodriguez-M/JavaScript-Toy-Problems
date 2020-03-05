@@ -10,8 +10,12 @@ var number = 1;
 
 // While loop to check every number from 1-100
 while (number <= 100) {
-    // If statement to check if number is divisible by 3
-    if (number % 3 === 0) {
+    // If statement to check if number is divisible by 3 and 5
+    if (number % 3 === 0 && number % 5 === 0) {
+        console.log("FizzBuzz");
+    }
+    // Else if statement to check if number is divisible by 3
+    else if (number % 3 === 0) {
         console.log("Fizz");
     }
     // Else if statement to check if number is divisible by 5
