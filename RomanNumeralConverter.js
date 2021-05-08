@@ -16,6 +16,40 @@ function romanNumeral(num) {
             thousandsNum += numArr[i];
         }
     }
-    romanNumeral = "M".repeat(thousandsNum);
+    romanNumeral += "M".repeat(thousandsNum);
+
+    //Switch cases to assign roman numeral value based on hundreds place digit
+    switch (numArr[numArr.length - 3]) {
+        case "1":
+            romanNumeral += "C";
+            break;
+        case "2":
+            romanNumeral += "CC"
+            break;
+        case "3":
+            romanNumeral += "CCC";
+            break;
+        case "4":
+            romanNumeral += "CD";
+            break;
+        case "5":
+            romanNumeral += "D";
+            break;
+        case "6":
+            romanNumeral += "DC";
+            break;
+        case "7":
+            romanNumeral += "DCC";
+            break;
+        case "8":
+            romanNumeral += "DCCC";
+            break;
+        case "9":
+            romanNumeral += "CM";
+            break;
+        default:
+            break;
+    }
+
     return romanNumeral;
 }
