@@ -83,5 +83,39 @@ function romanNumeral(num) {
         default:
             break;
     }
+
+    //Switch cases to assign roman numeral value based on ones place digit
+    switch (numArr[numArr.length - 1]) {
+        case "1":
+            romanNumeral += "I";
+            break;
+        case "2":
+            romanNumeral += "II"
+            break;
+        case "3":
+            romanNumeral += "III";
+            break;
+        case "4":
+            romanNumeral += "IV";
+            break;
+        case "5":
+            romanNumeral += "V";
+            break;
+        case "6":
+            romanNumeral += "VI";
+            break;
+        case "7":
+            romanNumeral += "VII";
+            break;
+        case "8":
+            romanNumeral += "VIII";
+            break;
+        case "9":
+            romanNumeral += "IX";
+            break;
+        default:
+            break;
+    }
+
     return romanNumeral;
 }
