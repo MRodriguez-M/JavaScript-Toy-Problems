@@ -15,6 +15,9 @@ function rot13(str) {
         } else if(str.charCodeAt(i) == 78 || str.charCodeAt(i) == 79 || str.charCodeAt(i) == 80 || str.charCodeAt(i) == 81 || str.charCodeAt(i) == 82 || str.charCodeAt(i) == 83 || str.charCodeAt(i) == 84 || str.charCodeAt(i) == 85 || str.charCodeAt(i) == 86 || str.charCodeAt(i) == 87 || str.charCodeAt(i) == 88 || str.charCodeAt(i) == 89 || str.charCodeAt(i) == 90) {
             //Check and encode for letters N-Z
             encodeStr += String.fromCharCode(str.charCodeAt(i) - 13);
+        } else {
+            //Check for any character not A-Z and push to new string as is
+            encodeStr += str[i];
         }
     }
 
