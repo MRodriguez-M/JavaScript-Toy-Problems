@@ -12,8 +12,8 @@ const stringToFixedLengthParagraph = (text, num) => {
     currentLength = maxLength;
 
     for(let i = 0; i < strArr.length; i++) {
-        if(strArr[i].length < maxLength) {
-            if(strArr[i].length < currentLength) {
+        if(strArr[i].length <= maxLength) {
+            if(strArr[i].length <= currentLength) {
                 finalStr += strArr[i] + " ";
                 currentLength -= (strArr[i].length + 1);
             }
