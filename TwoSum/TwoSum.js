@@ -19,4 +19,4 @@ const twoSum = (numArr, num) => {
     return indexArr;
 }
 
-console.log(twoSum([2, 7, 11, 15], 9));
+module.exports = twoSum;
