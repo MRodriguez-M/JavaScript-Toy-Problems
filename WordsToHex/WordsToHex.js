@@ -23,4 +23,4 @@ const wordsToHex = (str) => {
     return hexArr;
 }
 
-console.log(wordsToHex("This sentence is testing the function's capabilties."));
+module.exports = wordsToHex;
