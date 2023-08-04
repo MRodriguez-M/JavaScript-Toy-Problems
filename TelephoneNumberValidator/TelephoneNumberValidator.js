@@ -22,7 +22,6 @@ const telephoneNumberValidator = (str) => {
     else {
         return false;
     }
-    //return result;
 }
 
-console.log(telephoneNumberValidator("1 (555)-555 55k55"));
+module.exports = telephoneNumberValidator;
