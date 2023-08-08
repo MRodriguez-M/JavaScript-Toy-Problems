@@ -13,9 +13,11 @@ The following are examples of valid formats for US numbers:
 
 const telephoneNumberValidator = (str) => {
     let numStr = str.replaceAll(" ", "");
+    //Regex pattern that checks for the different types of valid formats
     let numRegex = /^1?(\(\d{3}\)|\d{3})[\-]?\d{3}[\-]?\d{4}$/;
     let numCheck = numStr.match(numRegex);
 
+    //Statement to return boolean based on match from regex pattern
     if(numCheck != null) {
         return true;
     }
